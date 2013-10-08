@@ -1,9 +1,8 @@
 # Test Coverage setup
 require 'simplecov'
 
-SimpleCov.start do
-  minimum 80
-end
+SimpleCov.start 'rails'
+SimpleCov.minimum_coverage 80
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
