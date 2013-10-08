@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'coffee-rails', '~> 4.0.0'
+gem 'haml'
+gem 'haml-rails'
 gem 'inherited_resources'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
