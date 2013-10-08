@@ -22,4 +22,5 @@ group :development, :test do
   gem 'pry'
   gem 'rspec', '~> 2.0'
   gem 'rspec-rails'
+  gem 'simplecov', require: false
 end
