@@ -1,1 +1,7 @@
 %h1 Coding Hall of Horror
+- if session[:user_handle]
+  %h3
+    %span= "Welcome #{session[:user_handle]}!"
+- else
+  = link_to '/auth/github', id: 'auth-with-github' do
+    Authenticate with Github
