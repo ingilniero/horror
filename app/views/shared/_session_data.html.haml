@@ -1,0 +1,6 @@
+#user-avatar
+  %img{src: user_avatar}
+#welcome-message
+  %span= "Welcome #{user_handle}!"
+= link_to logout_path, class: 'logout-link', method: :delete do
+  Log out
