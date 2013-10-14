@@ -11,7 +11,6 @@ gem 'jquery-rails'
 gem 'newrelic_rpm'
 gem 'omniauth'
 gem 'omniauth-github'
-gem 'puma'
 gem 'rails', '4.0.0'
 gem 'sass-rails', '~> 4.0.0'
 gem 'turbolinks'
@@ -29,6 +28,7 @@ group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'pry'
+  gem 'puma'
   gem 'rspec', '~> 2.0'
   gem 'rspec-rails'
   gem 'simplecov', require: false
@@ -36,5 +36,5 @@ end
 
 group :production, :staging do
   gem 'pg'
-  gem 'rails_serve_static_assets'
+  gem 'passenger'
 end
