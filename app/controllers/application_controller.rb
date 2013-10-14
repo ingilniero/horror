@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   def current_user
-    session[:user_handle]
+    session[:auth_hash]
   end
 
   protected
