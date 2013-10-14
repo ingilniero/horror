@@ -20,3 +20,6 @@
 
 # Ignore database config file
 /config/database.yml
+
+# Ignore the ENV variables development settings
+/config/initializers/env_variables.rb
