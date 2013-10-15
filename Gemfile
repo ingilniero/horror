@@ -3,6 +3,7 @@ ruby '2.0.0'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'coffee-rails', '~> 4.0.0'
+gem 'font-awesome-rails'
 gem 'haml'
 gem 'haml-rails'
 gem 'inherited_resources'
