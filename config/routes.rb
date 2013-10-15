@@ -6,4 +6,6 @@ Horror::Application.routes.draw do
   delete  '/logout', to: 'sessions#destroy'
 
   resources :sessions, only: [:create, :destroy]
+
+  resources :entries
 end
