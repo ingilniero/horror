@@ -1,0 +1,12 @@
+.entry.pure-grid
+  .entry-info.pure-u-2-3
+    .entry-header
+      %span.entry-title= entry.title
+      %span submitted by
+      %a.entry-submitter{href: "https://github.com/#{entry.user_handle}"}
+        = entry.user_handle
+      %span= entry.created_at.to_s(:long)
+    .entry-description
+      = entry.description
+  .entry-image.pure-u-1-4
+    %img{ src: entry.image }
