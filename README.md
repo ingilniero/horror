@@ -2,6 +2,8 @@
 
 Show the world the most amusing code you've found in your projects...
 
+[Watch the demo](http://horror.herokuapp.com)
+
 ## Contributing
 
 - Fork the repository
