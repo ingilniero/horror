@@ -32,6 +32,7 @@ group :development, :test do
   gem 'puma'
   gem 'rspec', '~> 2.0'
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
   gem 'simplecov', require: false
 end
 
