@@ -1,2 +1,3 @@
-= link_to "/auth/github?client_id=#{ENV['GITHUB_KEY']}", id: 'auth-with-github' do
-  Authenticate with Github
+= link_to "/auth/github?client_id=#{ENV['GITHUB_KEY']}", id: 'auth-with-github', class: 'auth-link' do
+  %span.icon-github
+  %span Sign in
