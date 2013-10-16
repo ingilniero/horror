@@ -3,8 +3,7 @@
     .entry-header
       %span.entry-title= entry.title
       %span submitted by
-      %a.entry-submitter{href: "https://github.com/#{entry.user_handle}"}
-        = entry.user_handle
+      = render_entry_submitter entry
       %span= entry.created_at.to_s(:long)
     .entry-description
       = entry.description
