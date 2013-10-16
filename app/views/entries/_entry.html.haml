@@ -6,6 +6,7 @@
       = render_entry_submitter entry
       %span= entry.created_at.to_s(:long)
     .entry-description
-      = entry.description
+      :markdown
+        #{entry.description}
   .entry-image.pure-u-1-4
     %img{ src: entry.image }
