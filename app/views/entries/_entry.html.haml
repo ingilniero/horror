@@ -5,8 +5,7 @@
       %span submitted by
       = render_entry_submitter entry
       %span= entry.created_at.to_s(:long)
-    .entry-description
+    .entry-content
       :markdown
-        #{entry.description}
-  .entry-image.pure-u-1-4
-    %img{ src: entry.image }
+        #{entry.content}
+  .entry-right-block.pure-u-1-4

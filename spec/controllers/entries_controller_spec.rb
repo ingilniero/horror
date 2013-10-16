@@ -5,7 +5,7 @@ describe EntriesController do
     {
       entry: {
         title:        'Ugly code',
-        description:  'Seriously ugly'
+        content:      'Seriously ugly'
       }
     }
   end
