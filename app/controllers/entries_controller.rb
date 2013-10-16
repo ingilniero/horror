@@ -2,7 +2,7 @@ class EntriesController < ApplicationController
   include SessionConcern
 
   def create
-    params[:entry][:user_handle] = user_handle
+    params[:entry][:user_handle] = user_handle if current_user
     @entry = Entry.new(entry_params)
     if @entry.save
       respond_to do |format|
