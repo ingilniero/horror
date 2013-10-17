@@ -6,6 +6,6 @@
       = render_entry_submitter entry
       %span= entry.created_at.to_s(:long)
     .entry-content
-      :markdown
-        #{entry.content}
+      %pre{class: "language-#{entry.language}"}
+        %code= entry.content
   .entry-right-block.pure-u-1-4
