@@ -6,4 +6,6 @@
     %fieldset
       = f.text_area :content, id: 'new-entry-content', class: 'pure-input-2-3', placeholder: 'Content'
     %fieldset
+      = f.select :language, %w(ruby javascript),{id: 'new-entry-language', class: 'pure-input-2-3', prompt: 'Language'}
+    %fieldset
       = f.submit 'Submit horror', class: 'pure-input-2-3 pure-button'
